@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复习前端知识</title>
+   <script>
+       alert("第一个JavaScript"); //弹出警告框
+       document.write("文档打印第一个JavaScript"); //将内容写到 HTML 文档
+       console.log("1");  ///写入到浏览器的控制台
+       console.log("2");  //写入到浏览器的控制台
+       console.log("3");   //写入到浏览器的控制台
+       window.alert("44");   //弹出警告框
+       function myFunction01(){       // 如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖。
+        document.write("上当了")
+       }
+     document.write("屏幕宽度："+document.documentElement.clientWidth|| document.body.clientWidth);
+     function myFunction05(){
+         var height=document.documentElement.clientHeight || document.body.clientHeight;
+         document.getElementById("hei").innerHTML="屏幕高度："+height;
+     }
+     function testConfirm(){
+         var option=confirm("请选择");
+            if(option==ture)
+            {
+                document.write("你点击了确定");
+            }else{
+                document.write("你点击了取消");
+            }
+     }
+     
+   
+   </script>
+</head>
+<body>
+    <h1>标签起啊啊啊</h1> 
+    <h2>标题2222</h2>
+    <h3>标33333</h3>
+    <p id=demo>郑燕娟是猪</p> 
+    <p id=min>我想成为一个专业人士</p>
+    <p name=aid>测试name</p>
+    <p id=hei>屏幕高度：</p>
+    
+    <button onclick="myFunction01()">onclick</button>    <!--onlick是用户点击元素是的鼠标事件-->
+    <button ondblclick="myFunction02()">double</button> 
+    <button ondblclick="myFunction03()">你再点击两下你就很厉害了</button> 
+    <button ondblclick="myFunction04()">测试按钮</button> 
+    <button onclick="myFunction05()">获取高度</button>
+    <button onclick="testConfirm()">aaaa</button>
+    <script> 
+     function myFunction02(){
+        document.write("再次上当")
+    }
+    function myFunction03(){
+         document.getElementById("min").innerHTML="其实你已经很厉害了"
+     }
+     function myFunction04(){
+        document.getElementsByName("aid").innerHTML="测试成功"
+     }
+    document.getElementById("demo").innerHTML = "麦佳仪才是真猪";   // 操作 HTML 元素 必须要填写在body中，而且位置必须正在修改元素的后面
+    </script>
+  
+
+</body>
+</html>

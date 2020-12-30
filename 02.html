@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript数据类型练习</title>
+   
+</head>
+<body>
+<P id="aaa">请点击下方按钮可新增数组元素</P>
+<button onclick="changer()">wowowoowo</button>
+<a id=alink href="http:www.baidu.com">百度</a>
+<button onclick="xiugai()">修改链接</button>
+    <script>
+// JavaScript的变量知识
+        var text01="我是全局变量"; // 使用var关键字+变量名在函数外部声明就是全局变量
+          function changer(){
+              var text02="我是局部变量"; 
+                 text03="我是全局变量，没有var直接变量赋值的";  // 没有使用var关键字声明，直接给变量名赋值，不管是在函数内部还是外部都是全局变量
+                 document.write(text02+text03+text04);
+          }
+          window.text04="我是全局变量，采用window声明的。" // 使用window全局对象来声明
+       changer(); //js函数可以放在sctipt标签中执行
+  //基本数据类型
+
+       
+
+ // 对象数据类型  
+    // 1、数组对象
+    
+
+
+
+
+
+ 
+
+    </script>
+<!--     
+<p id="demo">单击按钮给数组添加新的元素。</p>
+<button onclick="myFunction()">点我</button>
+<script>
+var fruits02 = ["Banana", "Orange", "Apple", "Mango"];
+function myFunction(){
+	fruits02.push("Kiwi")
+	var x=document.getElementById("demo");
+	x.innerHTML=fruits02;
+} -->
+</script>
+</body>
+</html>
